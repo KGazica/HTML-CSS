@@ -1,0 +1,133 @@
+body {
+    background: url("https://images.unsplash.com/photo-1543782248-03e2c5a93e18?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80") no-repeat center center fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  background: #55d6aa;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+#text {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    padding-top: 100px;
+    font-size: 2em;
+    font-weight: 4000;
+    color:rgb(119, 32, 32);
+    text-shadow: white;
+}
+
+#preference {
+    text-align: right;
+    margin-left: 5px;
+    margin-top: 280px;
+    padding-right: 5px;
+    color: rgb(40, 153, 40);
+    font-size: 1.3em;
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+    font-family: sans; color: orange;
+}
+
+button {
+    background-color: green;
+    color: white;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    min-width: 100px;
+  }
+  
+  .search {
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 25px;
+    width: 100%;
+    padding: 2px 23px 2px 30px;
+    outline: 0;
+    background-color: #f5f5f5;
+  }
+  
+  .search-icon {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 14px;
+  }
+
+  .search:hover, .search:focus {
+    border: 1px solid #009688;
+    background-color: white;
+  }
+  
+input {
+    border-radius: 2mm;
+}
